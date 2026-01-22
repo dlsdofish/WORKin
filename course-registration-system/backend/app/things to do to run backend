@@ -1,0 +1,13 @@
+Steps to run
+Make sure your Docker PostgreSQL container is running on port 5433:
+      docker ps
+Activate virtualenv:
+      source /workspaces/WORKin/.venv/bin/activate
+Install dependencies (if not done already):
+      pip install fastapi uvicorn sqlalchemy psycopg2-binary python-dotenv
+Start the backend:
+      python -m uvicorn app.main:app --reload
+Open in browser: http://127.0.0.1:8000 → You should see:
+      {"message": "Course Registration System Backend is running!"}
+And in console:
+      ✅ Database connection successful
