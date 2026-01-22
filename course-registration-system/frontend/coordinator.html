@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coordinator Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Coordinator Dashboard</h1>
+
+    <h2>Create Class</h2>
+    <form id="createClassForm">
+        <input type="text" id="className" placeholder="Class Name" required>
+        <select id="collegeSelect"></select>
+        <select id="teacherSelect"></select>
+        <button type="submit">Create Class</button>
+    </form>
+
+    <h2>Assign Students to Class</h2>
+    <select id="classSelect"></select>
+    <select id="studentSelect" multiple></select>
+    <button id="assignStudentsBtn">Assign Students</button>
+
+    <script src="js/coordinator.js"></script>
+</body>
+</html>
